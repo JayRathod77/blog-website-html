@@ -4,72 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My simple blog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-
   <body>
-    <h1><b>My simple Blog</b></h1>
-    <a href="">Home</a> | <a href="">About</a> |
-    <a href="">Contact</a>
-    <hr />
-    <h1>My First Blog Post</h1>
-    <p>
-      This is the rst paragraph of my blog post. I'm excited to share my
-      thoughts and experiences with you all. In this post, I will be talking
-      about my day.
-    </p>
-    <p>
-      Let's start with my morning. I woke up early and had a cup of coffee.
-      Then, I decided to go for a walk in the park. It was a beautiful sunny
-      day, and the birds were singing. I saw many people walking their dogs and
-      children playing. It was very refreshing.
-    </p>
-    <img
-      style="width: 50%; height: 30%; object-fit: cover"
-      src="https://images.unsplash.com/photo-1738273473785-99c1fc498c14?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8"
-      alt="dogeshver"
-    />
-    <p>
-      Here is an image related to my walk in the park (imagine it's a picture of
-      a park!).
-    </p>
-    <h1>Things I saw in the park (List Example):</h1>
-    <ol>
-      <li>beautiful flowers</li>
-      <li>Squirrels running around</li>
-      <li>People doing yoga</li>
-      <li>A small pond with ducks</li>
-    </ol>
-    <hr />
-    <h1>My Second Blog Post - Favorite Foods</h1>
-    <p>
-      In this post, I want to talk about my favorite foods! I really enjoy
-      trying different cuisines and exploring new flavors.
-    </p>
-    <h3>Here are some of my top favorite foods:</h3>
-    <ol>
-        <li>Pizza</li>
-        <ul>
-            <li>Pepperoni</li>
-            <li>Margherita</li>
-            <li>Vegetarian</li>
+    <main class="container w-full bg-zinc-200 p-1">
+      <header>
+        <h1 class="text-3xl font-bold py-3">My Simple Blog</h1>
+      </header>
+      <nav class="flex justify-center gap-5 bg-blue-400 items-center py-3">
+        <a href="index.html" class="text-white">Home</a>|
+        <a href="about.html" class="text-white">About</a>|
+        <a href="contact.html" class="text-white">Contact</a>
+      </nav>
+      <hr class="my-3 border-1 border-gray-400" />
+      <section
+        class=" w-full  bg-white p-5 mb-3 border-1 border-gray-400 rounded-md"
+      >
+        <h1 class="text-2xl font-bold text-zinc-600">My First Blog Post</h1>
+        <hr class="my-3 border-1 border-gray-400" />
+        <p>
+          This is the first paragraph of my blog post. I'm excited to share my
+          thoughts and experiences with you all. In this post, I will be talking
+          about my day.
+        </p>
+        <br />
+        <p>
+          Let's start with my morning. I woke up early and had a cup of coffee.
+          Then, I decided to go for a walk in the park. It was a beautiful sunny
+          day, and the birds were singing. I saw many people walking their dogs
+          and children playing. It was very refreshing.
+        </p>
+        <div class="w-80 h-52 bg-gray-400 mx-[40%] rounded-md my-5">
+          <img
+            src="https://media.istockphoto.com/id/1853686056/photo/golden-retriever-relaxing-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=uW9dBWc85wvXuzCIoyEvhhXyKtPz9pKzcXcl5D8aCjI="
+            alt="blog post image"
+            class="w-full h-full object-cover rounded-md"
+          />
+        </div>
+        <p>
+          After the walk, I decided to go to the beach. I took a sunny shower and had a
+          nice dinner. I enjoyed the warm water and the beautiful sand. I also had
+          some ice cream with my friends.
+        </p>
+        <br />
+        <h3 class="text-xl font-bold text-zinc-600">Things I saw in the Park(List Example):</h3>
+        <ul class="list-disc pl-10 py-4">
+          <li>beautiful flowers</li>
+          <li>a group of people playing with toys</li>
+          <li>a small pond with fish</li>
+          <li>a girl with a red shirt and a white dress walking along the path</li>
         </ul>
-        <li>Sushi</li>
-        <li>Pasta</li>
-        <ol>
-            <li>Spaghetti</li>
-            <li>Lasagna</li>
-            <li>Ravioli</li>
+        <hr class="my-3 border-1 border-gray-400" />
+      </section>
+      <div class="w-full   bg-white p-5 mb-3 border-1 border-gray-400 rounded-md">
+        <h1 class="text-2xl font-bold text-zinc-600">My Second Blog Post-Favorite</h1>
+        <hr class="my-3 border-1 border-gray-400" />
+        <p>
+          This is the second paragraph of my blog post. I'm excited to share my
+          thoughts and experiences with you all. In this post, I will be talking
+          about my favorite things.
+        </p>
+        <br />
+        <h3>Here are some of my top favorite foods :</h3>
+        <ol class="list-decimal pl-10 py-4">
+          <li>Chocolate cake
+            <ul class="list-disc pl-10">
+              <li>Vanilla</li>
+              <li>Rocky road</li>
+              <li>Strawberry cheesecake</li>
+            </ul>
+          </li>
+          <li>Ice cream
+            <ul class="list-disc pl-10">
+              <li>Rocky road</li>
+              <li>Strawberry cheesecake</li>
+              <li>Rocky road</li>
+            </ul>
+          </li>
+          <li>Pizza
+            <ul class="list-disc pl-10">
+              <li>Pepperoni</li>
+              <li>Hawaiian</li>
+              <li>Cheeseburger</li>
+            </ul>
+          </li>
+          <li>French fries
+            <ul class="list-disc pl-10">
+              <li>Curly</li>
+              <li>Waffle</li>
+          </li>
         </ol>
-        
-    </ol>
-    <p>These are just a few of my favorites. What are yours?</p>
-    <p>That's all for this post! Thanks for reading!</p>
-    <hr />
-    <br><br><br>
-    <footer>
-      &copy; My Simple Blog 2022. All rights reserved.
-    </footer>
-    <br>
-    <br><br><br>
+        <p>These are just few of my favorite.What are yours?</p>
+        <br />
+        <br>
+        <h2>That's all for this post!Thanks for reading!</h2>
+      </div>
+      <hr class="my-4 border-1 border-gray-400" />
+      <footer class="flex justify-center bg-zinc-700 items-center py-3">
+        <p class="text-white">My Simple Blog &copy; 2021</p>  
+     </main>
   </body>
 </html>
